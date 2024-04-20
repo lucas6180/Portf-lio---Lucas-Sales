@@ -317,6 +317,7 @@ section.topo-do-site .flex{
   }
   .img-port button{
     width: 100%;
+    min-width: 200px;
     height: 4.5vh;
     border-radius: 5px;
     min-height: 30px;
