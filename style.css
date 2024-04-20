@@ -321,6 +321,7 @@ section.topo-do-site .flex{
     height: 4.5vh;
     border-radius: 5px;
     min-height: 30px;
+    max-height: 35px;
     outline: 0;
     border: 0;
     background-color:rgb(255, 19, 19);
@@ -487,7 +488,7 @@ button{
     cursor: pointer;
     transform: scale(1.03);
 }
-    @media screen and (max-width: 1020px) and (min-width: 700px){
+    @media screen and (max-width: 1020px) and (min-width: 920px){
     .barra-menu{
         padding: 0 4%;
     }
@@ -536,7 +537,7 @@ button{
         margin-right: 0;
     }
 }
-@media screen and (max-width:699px){
+@media screen and (max-width:919px){
     body{
         overflow-x: hidden;
     }
