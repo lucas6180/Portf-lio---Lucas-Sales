@@ -1,0 +1,649 @@
+/* Estilização geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(14, 14, 14);
+}
+.barra-menu{
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    min-height: 70px;
+    max-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    background-color: rgb(12, 12, 12);
+}
+.flex{
+    display: flex;
+}
+/* cabeçalho */
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+    display: inline-block;
+}
+header a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.06);
+    transition: .2s;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+.botao-contato button{
+    font-weight: 520;
+    background-color: rgb(255, 19, 19);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 45px;
+}
+.botao-contato button:hover{
+    box-shadow: 0px 0px 8px rgb(255, 19, 19);
+    transform: scale(1.02);
+    transition: .2s;
+}
+
+
+
+/* animação logo */
+@keyframes flutuar{
+    0%, 100%{
+
+    }
+    33.33%{
+        transform: translateY(-4px);
+    }
+
+}
+.logo-site img{
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 0px 6px rgb(255, 19, 19));
+}
+/* topo site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+    width: 100%;
+    height: 100%;
+   
+}
+section.topo-do-site .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+}
+.topo-do-site p{
+    color: white;
+    margin: 25px 0;
+}
+.img-topo-site img{
+    width: 100%;
+    max-width: 625px;
+    filter: drop-shadow(0px 0px 3px rgb(255, 19, 19))
+}
+.topo-do-site h1{
+    font-size: 37px;
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+    
+}
+.topo-do-site h1 #cursor{
+    color: rgb(255, 19, 19);
+    font-size: 37px;
+}
+.topo-do-site p span{
+    color: rgb(255, 19, 19);
+}
+
+.sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.sobre img{
+    width: 100%;
+    max-width: 350px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 8px rgb(255, 19, 19));
+}
+.conteudo-sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    background-color: rgb(19, 19, 19);
+    padding-top: 7%;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 45px 4%;
+}
+.conteudo-sobre h1{
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+}
+ .piscar-azul{
+    animation: piscar 1s infinite;
+    color: rgb(255, 19, 19);
+}
+.texto-cor-azul{
+    color: rgb(255, 19, 19);
+}
+#cursor {
+    animation: piscar 1s infinite;
+  }
+  
+  @keyframes piscar {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .conteudo-conhecimentos{
+    height: 100%;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+  }
+  .conteudo-conhecimentos .flex{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 0 4%;
+        justify-content: space-between;
+    }
+    .conteudo-conhecimentos h1{
+        font-size: 28px;
+        text-align: center;
+        color: white;
+        filter:drop-shadow(0 0 1px rgb(255, 19, 19));
+    }
+    .conteudo-conhecimentos .flex h2{
+        font-size: 18px;
+        color: rgb(255, 19, 19);
+    }
+    .conhecimentos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 45px 0;
+    }
+    .conteudo-conhecimentos .flex > img{
+        width: 100%;
+        max-width: 550px;
+        min-width: 420px;
+        filter: drop-shadow(0 0 5px rgb(255, 19, 19));
+        padding-right: 5%;
+    }
+    .conteudo-conhecimentos .flex img{
+        width: 100%;
+        max-width: 44px;
+        filter: drop-shadow(0 0 2px rgb(255, 19, 19));
+    }
+    .javascript{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: solid rgb(26, 26, 26);
+        background-color: rgb(26, 26, 26);
+        border-radius: 5px;
+    }
+    .javascript img{
+        width: 100%;
+        max-width: 40px;
+        border-radius: 50%;
+        filter: drop-shadow(0 0 3px rgb(255, 19, 19));
+    }
+    .html{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: solid rgb(26, 26, 26);
+        background-color: rgb(26, 26, 26);
+        border-radius: 5px;
+        width: 100%;
+    }
+    .css{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: solid rgb(26, 26, 26);
+        background-color: rgb(26, 26, 26);
+        border-radius: 5px;
+        width: 100%;
+    }
+  .git{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: solid rgb(26, 26, 26);
+        background-color: rgb(26, 26, 26);
+        border-radius: 5px;
+        width: 100%;
+  }
+  .sql{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 2%;
+    border: solid rgb(26, 26, 26);
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .conteudo-projetos{
+    background-color: rgb(19, 19, 19);
+    padding-top: 7%;
+  }
+  .conteudo-projetos .flex{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    padding: 50px 4%;
+    flex-wrap: wrap;
+    max-width: 1400px;
+  }
+  .img-port{
+    padding: 25px 2%;
+    width: 20%;
+    height: 360px;
+    border: solid rgb(255, 19, 19);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 250px;
+    max-width: 260px;
+    margin-bottom: 5%;
+    margin-right: 0;
+}
+  .img-port img{
+    width: 100%;;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 3px rgb(255, 19, 19));
+    margin-bottom: 12%;
+  }
+  .img-port h1{
+    color: white;
+    font-size: 18px;
+  }
+  .img-port p{
+    font-size: 10px;
+    color: white;
+  }
+  .img-port button{
+    width: 100%;
+    height: 4.5vh;
+    border-radius: 5px;
+    min-height: 30px;
+    outline: 0;
+    border: 0;
+    background-color:rgb(255, 19, 19);
+    color: white;
+  }
+    .prontos button:hover{
+    background-color:rgb(187, 14, 14);
+    filter: drop-shadow(0 0 2px rgb(255, 19, 19));
+    transform: scale(1.02);
+  }
+  .menu-mario span{
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 20px ;
+}
+.conteudo-projetos > h1{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    filter: drop-shadow(0 0 1px rgb(255, 19, 19));
+}
+.conteudo-projetos p{
+    text-align: center;
+}
+.breve{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.breve button{
+    cursor: no-drop;
+    background-color: rgba(117, 0, 0, 0.74);
+}
+.titulo-em-breve{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    padding-top: 10%;
+    height: 42%;
+}
+.descricao p{
+    text-align: center;
+}
+.fita{
+    width: 71vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: rotate(308deg);
+    position: relative;
+    top: 18%;
+    border: solid 0;
+    height: 35px;
+    background-color:  rgb(255, 19, 19);
+}
+.fita p{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.conteudo-contato .flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 7%;
+    padding-bottom: 6%;
+}
+
+ .formas-contato{
+    width: 100%;
+    height: 15vh;
+    max-width: 700px;
+    min-width: 600px;
+    max-height: 100px;
+    border: solid rgb(255, 19, 19) 1px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.conteudo-contato .flex h1{
+    color:  rgb(255, 255, 255);
+    margin-bottom: 4%;
+    filter: drop-shadow(0 0 3px rgb(255, 19, 19));
+}
+.conteudo-contato .flex p{
+    color: white;
+    
+}
+.formas-contato img{
+    filter: drop-shadow(0px 0px 2px rgb(255, 19, 19));
+}
+ .conteudo-contato .logo{
+    height: 100%;
+    max-height: 50px;
+ }
+
+button{
+    width: 18vw;
+    height: 6vh;
+    border-radius: 5px;
+    outline: 0;
+    background-color:rgb(255, 19, 19);
+    color: white;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    max-height: 55px;
+    max-width: 250px;
+ }
+
+
+ .conteudo-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    padding-top: 4%;
+ }
+ .conteudo-rodape .flex{
+    width: 100%;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 4%;
+    gap: 10px;
+ }
+ .conteudo-rodape h1{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+}
+.conteudo-rodape .flex h2{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 19, 19);
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+}
+.conteudo-rodape .flex img{
+    width: 100%;
+    max-width: 30px;
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+}
+.conteudo-rodape .flex img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+    @media screen and (max-width: 1020px) and (min-width: 700px){
+    .barra-menu{
+        padding: 0 4%;
+    }
+    header ul{
+        display: none;
+    }
+    section.topo-do-site{
+        padding: 40px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .conteudo-sobre .flex{
+        padding: 45px 7%;
+    }
+    .conteudo-conhecimentos .flex{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 0 8%;
+    }
+    .conteudo-projetos .flex{
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        padding: 50px 8%;
+        flex-wrap: wrap;
+        max-width: 1400px;
+      }
+      .img-port{
+        padding: 25px 2%;
+        width: 20%;
+        height: 360px;
+        border: solid rgb(255, 19, 19);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-width: 250px;
+        max-width: 260px;
+        margin-bottom: 10%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:699px){
+    body{
+        overflow-x: hidden;
+    }
+    .barra-menu{
+        padding: 0 4%;
+    }
+    header ul{
+        display: none;
+    }
+    section.topo-do-site{
+        padding: 40px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .conteudo-sobre .flex{
+        padding: 45px 7%;
+    }
+    .conteudo-conhecimentos .flex{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 0 8%;
+    }
+    .conteudo-projetos .flex{
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        padding: 50px 8%;
+        flex-wrap: wrap;
+        max-width: 1400px;
+      }
+      .img-port{
+        padding: 25px 2%;
+        width: 20%;
+        height: 360px;
+        border: solid rgb(255, 19, 19);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-width: 250px;
+        max-width: 260px;
+        margin-bottom: 10%;
+        margin-right: 0;
+    }
+    section.topo-do-site .flex{
+        padding: 40px 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+    .topo-do-site h1{
+        color: white;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .botao-contato button{
+        font-weight: 520;
+        background-color: rgb(255, 19, 19);
+        border: 0;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 160px;
+        height: 45px;
+    }
+    .sobre{
+        flex-direction: column;
+        padding: 0 4%;
+    }
+    .conteudo-conhecimentos .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo-projetos .flex{
+        align-items: center;
+        flex-direction: column;   
+    }
+    .conteudo-contato .flex{
+        gap: 40px;
+    }
+    .formas-contato{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        max-width: 0;
+        min-width: 300px;
+        max-height: 200px;
+        padding: 25px 4%;
+        gap: 15px;
+    }
+    .formas-contato button{
+        width: 100%;
+        min-width: 200px;
+    }
+    .conteudo-rodape .flex h2{
+        font-size: 30px;
+        text-align: center;
+        color: rgb(255, 19, 19);
+        filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+    }
+}
