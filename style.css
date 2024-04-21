@@ -393,7 +393,11 @@ section.topo-do-site .flex{
     font-size: 24px;
     font-weight: 600;
 }
-
+.conteudo-contato{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 4%;
+}
 .conteudo-contato .flex{
     width: 100%;
     height: 100%;
@@ -402,8 +406,7 @@ section.topo-do-site .flex{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-top: 7%;
-    padding-bottom: 6%;
+    padding-top: 4%;
 }
 
  .formas-contato{
@@ -420,7 +423,8 @@ section.topo-do-site .flex{
     padding: 0 4%;
 }
 
-.conteudo-contato .flex h1{
+.conteudo-contato h1{
+    text-align: center;
     color:  rgb(255, 255, 255);
     margin-bottom: 4%;
     filter: drop-shadow(0 0 3px rgb(255, 19, 19));
