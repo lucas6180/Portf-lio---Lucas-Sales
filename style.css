@@ -215,8 +215,8 @@ section.topo-do-site .flex{
     .conteudo-conhecimentos .flex  .img-conhecimento{
         width: 100%;
         margin-top: 8%;
-        max-width: 350px;
-        min-width: 350px;
+        max-width: 400px;
+        min-width: 400px;
         max-height:400px;
         filter: drop-shadow(0 0 8px rgb(255, 19, 19));
 
