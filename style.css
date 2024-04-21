@@ -8,9 +8,6 @@
 }
 body{
     background-color: rgb(14, 14, 14);
-    border: solid rgb(255, 19, 19) 2px;
-    border-bottom: 0;
-    border-top: 0;
 }
 .barra-menu{
     display: flex;
@@ -158,6 +155,9 @@ section.topo-do-site .flex{
     color: white;
     filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
 }
+.conteudo-sobre p{
+    width: 600px;
+}
  .piscar-azul{
     animation: piscar 1s infinite;
     color: rgb(255, 19, 19);
@@ -212,14 +212,16 @@ section.topo-do-site .flex{
         gap: 25px;
         padding: 45px 0;
     }
-    .conteudo-conhecimentos .flex > img{
+    .conteudo-conhecimentos .flex  .img-conhecimento{
         width: 100%;
-        max-width: 550px;
-        min-width: 420px;
-        filter: drop-shadow(0 0 5px rgb(255, 19, 19));
-        padding-right: 5%;
+        margin-top: 8%;
+        max-width: 350px;
+        min-width: 350px;
+        max-height:400px;
+        filter: drop-shadow(0 0 8px rgb(255, 19, 19));
+
     }
-    .conteudo-conhecimentos .flex img{
+    .conhecimentos img{
         width: 100%;
         max-width: 44px;
         filter: drop-shadow(0 0 2px rgb(255, 19, 19));
@@ -579,6 +581,9 @@ button{
 }
 @media screen and (min-width: 720px) and (max-width:919px){
 
+        body{
+            overflow-x: hidden;
+        }
     .barra-menu{
         padding: 0 4%;
     }
@@ -610,7 +615,14 @@ button{
         width: 100%;
         height: 100%;
         color: white;
-        padding: 0 8%;
+        padding: 30px 8%;
+    }
+    .conteudo-conhecimentos .flex  .img-conhecimento{
+        max-width: 350px;
+        min-width: 350px;
+        max-height:400px;
+        padding-bottom: 50px;
+
     }
     .conteudo-projetos{
         background-color: rgb(19, 19, 19);
@@ -740,6 +752,9 @@ button{
     }
 }
 @media  screen and  (max-width: 719px){
+    body{
+        overflow-x: hidden;
+    }
     .barra-menu{
         padding: 0 4%;
     }
@@ -749,9 +764,9 @@ button{
     section.topo-do-site{
         padding: 40px 8%;
     }
-    .topo-do-site h1{
-        font-size: 36px;
-        line-height: 40px;
+    .topo-do-site #nome{
+        font-size: 140%;
+        line-height: 20px;
     }
     .topo-do-site img{
         max-width: 400px;
@@ -759,11 +774,12 @@ button{
     .conteudo-sobre img{
     max-width: 250px;
     }
-    .conteudo-sobre .flex{
+    .conteudo-sobre .flex .sobre{
         padding: 45px 5%;
     }
     .conteudo-sobre p{
         width: 315px;
+        font-size: 12px;
     }
     .conteudo-conhecimentos .flex{
         display: flex;
@@ -834,6 +850,16 @@ button{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 50px;
+    }
+    .conteudo-conhecimentos .flex  .img-conhecimento{
+        width: 100%;
+        margin-top: 8%;
+        max-width: 250px;
+        min-width: 250px;
+        max-height:400px;
+        filter: drop-shadow(0 0 8px rgb(255, 19, 19));
+
     }
     .conteudo-contato .flex{
         gap: 40px;
