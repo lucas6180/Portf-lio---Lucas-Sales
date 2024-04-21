@@ -8,6 +8,9 @@
 }
 body{
     background-color: rgb(14, 14, 14);
+    border: solid rgb(255, 19, 19) 2px;
+    border-bottom: 0;
+    border-top: 0;
 }
 .barra-menu{
     display: flex;
@@ -276,16 +279,18 @@ section.topo-do-site .flex{
 
   .conteudo-projetos{
     background-color: rgb(19, 19, 19);
-    padding-top: 7%;
-  }
-  .conteudo-projetos .flex{
+   padding: 100px 4%;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
-    padding: 50px 4%;
-    flex-wrap: wrap;
-    max-width: 1400px;
   }
+.conteudo-projetos .flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
   .img-port{
     padding: 25px 2%;
     width: 20%;
@@ -455,30 +460,55 @@ button{
     height: 100%;
     width: 100%;
     background-color: rgb(10, 10, 10);
-    padding-top: 4%;
+    padding-top: 1%;
  }
  .conteudo-rodape .flex{
     width: 100%;
     height: 100%;
     color: white;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 1% 4%;
-    gap: 10px;
+    justify-content: space-between;
  }
+ .preenchimento{
+    width: 100%;
+    height: 100%;
+    max-width: 310px;
+ }
+ .informacoes-rodape{
+    width: 28%;
+    height: 100%;
+    max-width: 350px;
+    min-width: 300px;
+}
+.informacoes-rodape h2{
+    font-size: 14px;
+}
+.informacoes-rodape p{
+    font-size: 12px;
+}
+.informacoes-rodape span, a{
+    color: rgb(255, 19, 19);
+}
+.dev-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 230px;
+}
  .conteudo-rodape h1{
     color: white;
     font-size: 20px;
     text-align: center;
     filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
 }
-.conteudo-rodape .flex h2{
+.conteudo-rodape .flex .dev-rodape h2{
     font-size: 40px;
     text-align: center;
     color: rgb(255, 19, 19);
     filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
 }
+
 .conteudo-rodape .flex img{
     width: 100%;
     max-width: 30px;
@@ -513,14 +543,20 @@ button{
         color: white;
         padding: 0 8%;
     }
+    .conteudo-projetos{
+        background-color: rgb(19, 19, 19);
+       padding: 100px 4%;
+        width: 100%;
+        height: 100%;
+      }
     .conteudo-projetos .flex{
         width: 100%;
         height: 100%;
-        justify-content: space-between;
-        padding: 50px 8%;
+        display: flex;
+        padding: 50px 0;
         flex-wrap: wrap;
-        max-width: 1400px;
-      }
+        justify-content: space-around;
+    }
       .img-port{
         padding: 25px 2%;
         width: 20%;
@@ -537,10 +573,8 @@ button{
         margin-right: 0;
     }
 }
-@media screen and (max-width:919px){
-    body{
-        overflow-x: hidden;
-    }
+@media screen and (min-width: 720px) and (max-width:919px){
+
     .barra-menu{
         padding: 0 4%;
     }
@@ -554,8 +588,17 @@ button{
         font-size: 36px;
         line-height: 40px;
     }
+    .topo-do-site img{
+        max-width: 400px;
+    }
+    .conteudo-sobre img{
+    max-width: 250px;
+    }
     .conteudo-sobre .flex{
-        padding: 45px 7%;
+        padding: 45px 5%;
+    }
+    .conteudo-sobre p{
+        width: 550px;
     }
     .conteudo-conhecimentos .flex{
         display: flex;
@@ -565,14 +608,20 @@ button{
         color: white;
         padding: 0 8%;
     }
+    .conteudo-projetos{
+        background-color: rgb(19, 19, 19);
+        padding: 100px 8%;
+        width: 100%;
+        height: 100%;
+      }
     .conteudo-projetos .flex{
         width: 100%;
         height: 100%;
-        justify-content: space-between;
-        padding: 50px 8%;
+        display: flex;
+        padding: 50px 4%;
         flex-wrap: wrap;
-        max-width: 1400px;
-      }
+        justify-content: space-around;
+    }
       .img-port{
         padding: 25px 2%;
         width: 20%;
@@ -621,9 +670,166 @@ button{
         justify-content: center;
         align-items: center;
     }
-    .conteudo-projetos .flex{
+    .conteudo-contato .flex{
+        gap: 40px;
+    }
+    .formas-contato{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        max-width: 0;
+        min-width: 300px;
+        max-height: 200px;
+        padding: 25px 4%;
+        gap: 15px;
+    }
+    .conteudo-contato{
+        padding: 50px 8%;
+    }
+    .conteudo-contato .flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .conteudo-contato h1{
+        text-align: center;
+        color:  rgb(255, 255, 255);
+        margin-bottom: 4%;
+        filter: drop-shadow(0 0 3px rgb(255, 19, 19));
+    }
+    .formas-contato button{
+        width: 100%;
+        min-width: 200px;
+        max-height: 35px;
+    }
+    .conteudo-rodape .flex .dev-rodape h2{
+        font-size: 28px;
+        text-align: center;
+        color: rgb(255, 19, 19);
+        filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+    }
+    .preenchimento{
+        width: 100%;
+        height: 100%;
+        max-width: 220px;
+        min-width: 200px;
+     }
+     .informacoes-rodape{
+        width: 28%;
+        height: 100%;
+        max-width: 220px;
+        min-width: 210px;
+    }
+    .informacoes-rodape h2{
+        font-size: 10px;
+    }
+    .informacoes-rodape p{
+        font-size: 8px;
+    }
+    .informacoes-rodape span, a{
+        color: rgb(255, 19, 19);
+    }
+    .dev-rodape{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        flex-direction: column;   
+        min-width: 230px;
+    }
+}
+@media  screen and  (max-width: 719px){
+    .barra-menu{
+        padding: 0 4%;
+    }
+    header ul{
+        display: none;
+    }
+    section.topo-do-site{
+        padding: 40px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .topo-do-site img{
+        max-width: 400px;
+    }
+    .conteudo-sobre img{
+    max-width: 250px;
+    }
+    .conteudo-sobre .flex{
+        padding: 45px 5%;
+    }
+    .conteudo-sobre p{
+        width: 315px;
+    }
+    .conteudo-conhecimentos .flex{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 0 8%;
+    }
+    .conteudo-projetos{
+        background-color: rgb(19, 19, 19);
+        padding: 100px 8%;
+        width: 100%;
+        height: 100%;
+      }
+    .conteudo-projetos .flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 50px 4%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+      .img-port{
+        padding: 25px 2%;
+        width: 20%;
+        height: 360px;
+        border: solid rgb(255, 19, 19);
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-width: 250px;
+        max-width: 260px;
+        margin-bottom: 10%;
+        margin-right: 0;
+    }
+    section.topo-do-site .flex{
+        padding: 40px 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+    .topo-do-site h1{
+        color: white;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .botao-contato button{
+        font-weight: 520;
+        background-color: rgb(255, 19, 19);
+        border: 0;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 160px;
+        height: 45px;
+    }
+    .sobre{
+        flex-direction: column;
+        padding: 0 4%;
+    }
+    .conteudo-conhecimentos .flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .conteudo-contato .flex{
         gap: 40px;
@@ -638,14 +844,44 @@ button{
         padding: 25px 4%;
         gap: 15px;
     }
+    .conteudo-contato{
+        padding: 50px 8%;
+    }
+    .conteudo-contato .flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .conteudo-contato h1{
+        text-align: center;
+        color:  rgb(255, 255, 255);
+        margin-bottom: 4%;
+        filter: drop-shadow(0 0 3px rgb(255, 19, 19));
+    }
     .formas-contato button{
         width: 100%;
         min-width: 200px;
+        max-height: 35px;
     }
-    .conteudo-rodape .flex h2{
-        font-size: 30px;
+    .conteudo-rodape .flex .dev-rodape h2{
+        font-size: 28px;
         text-align: center;
         color: rgb(255, 19, 19);
         filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+    }
+    .conteudo-rodape .flex{
+        justify-content: center;
+        padding: 18px 0;
+    }
+    .preenchimento{
+      display: none;
+     }
+     .informacoes-rodape{
+     display: none;
+    }
+    .dev-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 230px;
     }
 }
