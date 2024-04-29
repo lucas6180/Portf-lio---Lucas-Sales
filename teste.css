@@ -1,0 +1,8 @@
+/* CSS no arquivo teste.css */
+body{
+  padding-bottom: 500vh;
+}
+#nome-texto {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}

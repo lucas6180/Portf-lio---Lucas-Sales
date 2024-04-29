@@ -9,6 +9,7 @@
 body{
     background-color: rgb(14, 14, 14);
 }
+
 .barra-menu{
     display: flex;
     width: 100%;
@@ -19,9 +20,6 @@ body{
     justify-content: space-between;
     padding: 0 2%;
     background-color: rgb(12, 12, 12);
-}
-.flex{
-    display: flex;
 }
 /* cabeçalho */
 header > .interface{
@@ -47,13 +45,16 @@ header nav ul li{
     padding: 0 40px;
 }
 .botao-contato button{
-    font-weight: 520;
+    font-weight: 550;
+    font-size: 15px;
     background-color: rgb(255, 19, 19);
     border: 0;
     color: white;
     cursor: pointer;
     border-radius: 30px;
     height: 45px;
+    width: 100%;
+    max-width: 200px;
 }
 .botao-contato button:hover{
     box-shadow: 0px 0px 8px rgb(255, 19, 19);
@@ -88,8 +89,10 @@ section.topo-do-site{
 section.topo-do-site .flex{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 90px;
+    width: 100%;
+    height: 100%;
 }
 .topo-do-site h1{
     color: white;
@@ -156,7 +159,7 @@ section.topo-do-site .flex{
     filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
 }
 .conteudo-sobre p{
-    width: 600px;
+    width: 650px;
 }
  .piscar-azul{
     animation: piscar 1s infinite;
@@ -193,6 +196,7 @@ section.topo-do-site .flex{
         color: white;
         padding: 0 4%;
         justify-content: space-between;
+        align-items: center;
     }
     .conteudo-conhecimentos h1{
         font-size: 28px;
@@ -214,19 +218,16 @@ section.topo-do-site .flex{
     }
     .conteudo-conhecimentos .flex  .img-conhecimento{
         width: 100%;
-        margin-top: 8%;
         max-width: 400px;
-        min-width: 400px;
-        max-height:400px;
+        min-height: 370px;
         filter: drop-shadow(0 0 8px rgb(255, 19, 19));
-
     }
     .conhecimentos img{
         width: 100%;
         max-width: 44px;
         filter: drop-shadow(0 0 2px rgb(255, 19, 19));
     }
-    .javascript{
+    .card-conhecimentos{
         width: 100%;
         display: flex;
         align-items: center;
@@ -234,57 +235,24 @@ section.topo-do-site .flex{
         border: solid rgb(26, 26, 26);
         background-color: rgb(26, 26, 26);
         border-radius: 5px;
-    }
-    .javascript img{
-        width: 100%;
-        max-width: 40px;
-        border-radius: 50%;
+        max-width: 150px;
+        max-height: 50px;
         filter: drop-shadow(0 0 3px rgb(255, 19, 19));
     }
-    .html{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: solid rgb(26, 26, 26);
-        background-color: rgb(26, 26, 26);
-        border-radius: 5px;
-        width: 100%;
+    .sql{
+        padding-left: 5px;
     }
-    .css{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: solid rgb(26, 26, 26);
-        background-color: rgb(26, 26, 26);
-        border-radius: 5px;
-        width: 100%;
-    }
-  .git{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: solid rgb(26, 26, 26);
-        background-color: rgb(26, 26, 26);
-        border-radius: 5px;
-        width: 100%;
-  }
-  .sql{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 2%;
-    padding-left: 5px;
-    border: solid rgb(26, 26, 26);
-    background-color: rgb(26, 26, 26);
-    border-radius: 5px;
-    width: 100%;
-  }
 
   .conteudo-projetos{
     background-color: rgb(19, 19, 19);
    padding: 100px 4%;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
   }
 .conteudo-projetos .flex{
     width: 100%;
@@ -292,6 +260,7 @@ section.topo-do-site .flex{
     display: flex;
     padding: 50px 0;
     flex-wrap: wrap;
+    max-width: 980px;
     justify-content: space-around;
 }
   .img-port{
@@ -328,8 +297,7 @@ section.topo-do-site .flex{
     min-width: 200px;
     height: 4.5vh;
     border-radius: 5px;
-    min-height: 30px;
-    max-height: 35px;
+    max-height: 28px;
     outline: 0;
     border: 0;
     background-color:rgb(255, 19, 19);
@@ -444,7 +412,7 @@ section.topo-do-site .flex{
     max-height: 50px;
  }
 
-button{
+.conteudo-contato button{
     width: 18vw;
     height: 6vh;
     border-radius: 5px;
@@ -454,7 +422,7 @@ button{
     border: 0;
     font-size: 16px;
     cursor: pointer;
-    max-height: 55px;
+    max-height: 38px;
     max-width: 250px;
  }
 
@@ -470,10 +438,12 @@ button{
     padding-top: 1%;
  }
  .conteudo-rodape .flex{
+    display: flex;
     width: 100%;
     height: 100%;
     color: white;
     align-items: center;
+    justify-content: center;
     padding: 1% 4%;
     justify-content: space-between;
  }
@@ -501,7 +471,8 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 230px;
+    min-width: 220px;
+    max-width: 500px;
 }
  .conteudo-rodape h1{
     color: white;
@@ -716,7 +687,6 @@ button{
     .formas-contato button{
         width: 100%;
         min-width: 200px;
-        max-height: 35px;
     }
     .conteudo-rodape .flex .dev-rodape h2{
         font-size: 28px;
@@ -790,6 +760,7 @@ button{
         color: white;
         padding: 0 8%;
     }
+    
     .conteudo-projetos{
         background-color: rgb(19, 19, 19);
         padding: 100px 8%;
@@ -856,9 +827,10 @@ button{
     .conteudo-conhecimentos .flex  .img-conhecimento{
         width: 100%;
         margin-top: 8%;
-        max-width: 250px;
-        min-width: 250px;
-        max-height:400px;
+        max-width: 350px;
+        min-width: 200px;
+        max-height: 400px;
+        min-height: 300px;
         filter: drop-shadow(0 0 8px rgb(255, 19, 19));
 
     }
