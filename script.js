@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const nome = "Lucas Sales - Desenvolvedor Web";
     const elementoTexto = document.getElementById('nome-texto');
@@ -35,7 +36,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 
+const botaoMobile = document.getElementById('btn-menu-mobile');
+const menuMobile = document.getElementById('menu-mobile');
 
-
+menuMobile.addEventListener('click', animarMenu)
+botaoMobile.addEventListener('click', animarMenu)
+  function animarMenu(){
+  menuMobile.classList.toggle('abrir');
+  botaoMobile.classList.toggle('ativar')
+}
 
   

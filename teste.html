@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,46 @@
   <link rel="stylesheet" href="teste.css">
 </head>
 <body>
-  <h1 id="nome">
-    <span id="nome-texto">Lucas Sales</span>
-  </h1>
+    <button id="botao">Ligar</button>
 
+  <section class="section1"></section>
+  <section class="section2"></section>
+  <section class="section3"></section>
+  <section class="section4"></section>
+  <section class="section5"></section>
+  
+  
+  
   <script>
-    window.addEventListener('scroll', function() {
-      console.log("Rolou a página"); // Verificação simples no console
-    });
+    let sections = document.getElementsByTagName('section');   
+    let botao = document.getElementById('botao');
+
+    for(let i = 0; i < sections.length; i++){
+    let section1 = sections[i]
+    botao.addEventListener('click',()=>{
+       if(i % 2 == 0){
+        if(section1.classList.contains('ligado')){
+          section1.style.backgroundColor = 'grey';
+          botao.innerText = 'Ligar'
+          section1.classList.remove('ligado')
+      }
+      else{
+      section1.classList.add('ligado')
+      section1.style.backgroundColor = 'grey';
+      botao.innerText = 'Desligar'
+    }
+
+       }
+    
+
+    else{
+      section1.classList.add('ligado')
+      section1.style.backgroundColor = 'white';
+      botao.innerText = 'Desligar'
+    }
+    })
+  };
+  
   </script>
 </body>
 </html>

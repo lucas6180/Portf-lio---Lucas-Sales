@@ -17,6 +17,8 @@ body{
     min-height: 70px;
     max-height: 80px;
     align-items: center;
+    position: fixed;
+    z-index: 2;
     justify-content: space-between;
     padding: 0 2%;
     background-color: rgb(12, 12, 12);
@@ -27,20 +29,20 @@ header > .interface{
     align-items: center;
     justify-content: space-between;
 }
-header a{
+header .menu-desktop a{
     color: rgb(82, 82, 82);
     text-decoration: none;
     display: inline-block;
 }
-header a:hover{
+header .menu-desktop a:hover{
     color: rgb(255, 255, 255);
     transform: scale(1.06);
     transition: .2s;
 }
-header nav ul{
+header .menu-desktop  ul{
     list-style-type: none;
 }
-header nav ul li{
+header .menu-desktop li{
     display: inline-block;
     padding: 0 40px;
 }
@@ -74,10 +76,20 @@ header nav ul li{
     }
 
 }
+@keyframes flutuar-conhecimentos{
+    0%, 100%{
+
+    }
+    33.33%{
+        transform: translateY(-10px);
+    }
+}
 .logo-site img{
     animation: flutuar 1.5s ease-in-out infinite alternate;
     filter: drop-shadow(0px 0px 6px rgb(255, 19, 19));
 }
+
+
 /* topo site */
 
 section.topo-do-site{
@@ -93,6 +105,7 @@ section.topo-do-site .flex{
     gap: 90px;
     width: 100%;
     height: 100%;
+    padding: 50px 0 ;
 }
 .topo-do-site h1{
     color: white;
@@ -125,14 +138,28 @@ section.topo-do-site .flex{
     width: 100%;
     height: 100%;
     display: flex;
-    gap: 30px;
     align-items: center;
+    justify-content: space-between;
 }
-.sobre img{
+
+.conteudo-sobre .flex > img{
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     border-radius: 50%;
     filter: drop-shadow(0 0 8px rgb(255, 19, 19));
+}
+.diplomas .texto-cor-vermelho{
+    font-weight: 500;
+}
+p span{
+    font-weight: 500;
+}
+.conteudo-sobre .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 50px;
 }
 .conteudo-sobre{
     width: 100%;
@@ -140,17 +167,80 @@ section.topo-do-site .flex{
     display: flex;
     flex-direction: column;  
     background-color: rgb(19, 19, 19);
-    padding-top: 7%;
+    min-height: 600px;
+    color: white;
+    padding: 85px 4%;
 }
-
-.conteudo-sobre{
+.conteudo-sobre h2{
+    font-size: 18px;
+    text-align: center;
+}
+.sobre-mim{
+    box-shadow:0 0 2px 0px rgb(255, 19, 19), 
+     15px 15px 0px 0px rgb(243, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(7, 7, 7);
     display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    max-width: 320px;
+    font-size: 13px;
     flex-direction: column;
-    gap: 40px;
+    min-height: 270px;
+}
+.sobre-mim p{
+    text-align: center;
+    font-weight: 500;
+}
+.marcacao-img-sobre{
     width: 100%;
     height: 100%;
-    color: white;
-    padding: 45px 4%;
+    min-height: 120px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.sobre-mim img{
+    width: 100%;
+    max-height: 100px;
+    max-width: 95px;
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+}
+
+.sobre-cursos{
+    box-shadow:0 0 2px 0px rgb(255, 19, 19), 
+     15px 15px 0px 0px rgb(243, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    max-width: 320px;
+    flex-direction: column;
+    min-height: 270px;
+
+}
+.sobre-cursos img{
+    max-width: 80px;
+    width: 100%;
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+}
+.sobre-cursos p{
+    text-align: center;
+    width: 100px;
+    font-weight: 500;
+}
+
+.diplomas{
+    font-size: 12px;
+    padding: 0 10px;
+    font-weight: 500;
+    width: 310px;
+}
+.diplomas img{
+max-width: 30px;
 }
 .conteudo-sobre h1{
     font-size: 28px;
@@ -158,14 +248,39 @@ section.topo-do-site .flex{
     color: white;
     filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
 }
-.conteudo-sobre p{
-    width: 650px;
+.sobre-cursos p{
+    width: 300px;
+    font-weight: 500;
+}
+.sobre-objetivos{
+    box-shadow:0 0 2px 0px rgb(255, 19, 19), 
+    15px 15px 0px 0px rgb(243, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    max-width: 320px;
+    font-size: 13px;
+    flex-direction: column;
+    min-height: 270px;
+}
+.sobre-objetivos img{
+    width: 100%;
+    max-width: 85px;
+    filter:drop-shadow(0 0 1px  rgb(255, 19, 19));
+}
+.sobre-objetivos p{
+    width: 305px;
+    font-weight: 500;
+    text-align: center;
 }
  .piscar-azul{
     animation: piscar 1s infinite;
     color: rgb(255, 19, 19);
 }
-.texto-cor-azul{
+.texto-cor-vermelho{
     color: rgb(255, 19, 19);
 }
 #cursor {
@@ -218,9 +333,10 @@ section.topo-do-site .flex{
     }
     .conteudo-conhecimentos .flex  .img-conhecimento{
         width: 100%;
-        max-width: 400px;
+        max-width: 450px;
         min-height: 370px;
-        filter: drop-shadow(0 0 8px rgb(255, 19, 19));
+        animation: flutuar-conhecimentos 3s ease-in-out infinite;
+        filter: drop-shadow(0 0 80px rgb(255, 19, 19));
     }
     .conhecimentos img{
         width: 100%;
@@ -229,15 +345,20 @@ section.topo-do-site .flex{
     }
     .card-conhecimentos{
         width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         gap: 8px;
-        border: solid rgb(26, 26, 26);
-        background-color: rgb(26, 26, 26);
+        border: 0;
+        background-color: #111111;
         border-radius: 5px;
         max-width: 150px;
-        max-height: 50px;
-        filter: drop-shadow(0 0 3px rgb(255, 19, 19));
+        min-height: 55px;
+        max-height: 70px;
+        box-shadow: 1px 5px 0 2px rgb(5, 5, 5),
+        -3px 2px 0 0px  rgb(255, 19, 19),
+        8px 12px 4px 0 rgba(0, 0, 0, 0.315);
+        
     }
     .sql{
         padding-left: 5px;
@@ -302,6 +423,7 @@ section.topo-do-site .flex{
     border: 0;
     background-color:rgb(255, 19, 19);
     color: white;
+    cursor: pointer;
   }
     .prontos button:hover{
     background-color:rgb(187, 14, 14);
@@ -353,7 +475,7 @@ section.topo-do-site .flex{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    transform: rotate(308deg);
+    transform: rotate(304deg);
     position: relative;
     top: 18%;
     border: solid 0;
@@ -425,7 +547,11 @@ section.topo-do-site .flex{
     max-height: 38px;
     max-width: 250px;
  }
-
+.conteudo-contato button:hover{
+    transform: scale(1.03);
+    transition: .2s;
+    filter: drop-shadow(0px 0px 2px rgb(255, 19, 19));
+}
 
  .conteudo-rodape{
     display: flex;
@@ -496,12 +622,93 @@ section.topo-do-site .flex{
     cursor: pointer;
     transform: scale(1.03);
 }
+#menu-mobile nav a{
+    color: white;
+    font-size: 15px;
+    padding: 20px 30px;
+    display: block;
+    text-decoration: none;
+}
+/* Menu Mobile */
+#menu-mobile{
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    top: 77px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+}
+#menu-mobile ul a{
+    color: white;
+    display: block;
+    padding: 20px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+#menu-mobile a:hover{
+    background-color: rgb(29, 29, 29);
+}
+.linha{
+    width: 30px;
+    height: 5px;
+    display: block;
+    position: relative;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin: 5px auto;
+    transform-origin: center;
+    transition: .2s;
+    filter: drop-shadow(0 0 2px rgb(255, 19, 19));
+}
+.btn-mob{
+    display: none;
+}
+#btn-menu-mobile{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    outline: hidden;
+    border: 0;
+    cursor: pointer;
+}
+
+#btn-menu-mobile.ativar .linha:nth-child(1){
+    transform:  translateY(8px) rotate(-45deg);
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 2px rgb(255, 19, 19));
+}
+#btn-menu-mobile.ativar .linha:nth-child(3){
+    transform: translateY(-8px)rotate(45deg);
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 2px rgb(255, 19, 19));
+}
+#btn-menu-mobile.ativar .linha:nth-child(2){
+    width: 0;
+}
+
+
     @media screen and (max-width: 1020px) and (min-width: 920px){
     .barra-menu{
-        padding: 0 4%;
+        padding: 0 4%;;
     }
-    header ul{
-        display: none;
+    .btn-mob{
+        display: flex;
+    }
+    #menu-mobile.abrir{
+        visibility: visible;
+        transition: .2s;
+    }
+    #btn-menu-mobile{
+        display: flex;
+    }
+    .menu-desktop{
+    display: none;
     }
     section.topo-do-site{
         padding: 40px 8%;
@@ -513,6 +720,7 @@ section.topo-do-site .flex{
     .conteudo-sobre .flex{
         padding: 45px 7%;
     }
+
     .conteudo-conhecimentos .flex{
         display: flex;
         gap: 20px;
@@ -559,8 +767,14 @@ section.topo-do-site .flex{
     .barra-menu{
         padding: 0 4%;
     }
-    header ul{
-        display: none;
+    #menu-mobile.abrir{
+        visibility: visible;
+    }
+    .menu-desktop{
+    display: none;
+    }
+    .btn-mob{
+        display: flex;
     }
     section.topo-do-site{
         padding: 40px 8%;
@@ -580,6 +794,26 @@ section.topo-do-site .flex{
     }
     .conteudo-sobre p{
         width: 550px;
+    }
+.sobre-mim img{
+    max-width: 85px;
+}
+    .sobre-cursos img{
+        max-width: 85px;
+    }
+    .sobre-objetivos img{
+        max-width: 85px;
+    }
+    .sobre-objetivos p{
+        width: 280px;
+    }
+    .sobre-objetivos{
+        margin: auto;
+    }
+    .sobre{
+        flex-direction: column;
+        gap: 80px 50px;
+        flex-wrap: wrap;
     }
     .conteudo-conhecimentos .flex{
         display: flex;
@@ -649,12 +883,7 @@ section.topo-do-site .flex{
         max-width: 160px;
         height: 45px;
     }
-    .sobre{
-        flex-direction: column;
-        padding: 0 4%;
-    }
     .conteudo-conhecimentos .flex{
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -726,11 +955,18 @@ section.topo-do-site .flex{
     body{
         overflow-x: hidden;
     }
+
     .barra-menu{
         padding: 0 4%;
     }
-    header ul{
-        display: none;
+    .btn-mob{
+        display: flex;
+    }
+    #menu-mobile.abrir{
+        visibility: visible;
+    }
+    .menu-desktop{
+    display: none;
     }
     section.topo-do-site{
         padding: 40px 8%;
@@ -748,10 +984,32 @@ section.topo-do-site .flex{
     .conteudo-sobre .flex .sobre{
         padding: 45px 5%;
     }
-    .conteudo-sobre p{
-        width: 315px;
-        font-size: 12px;
+    .conteudo-sobre img{
+        max-width: 250px;
+        }
+        .conteudo-sobre .flex{
+            padding: 45px 5%;
+        }
+        .conteudo-sobre p{
+            width: 550px;
+        }
+    .sobre-mim img{
+        max-width: 85px;
     }
+        .sobre-cursos img{
+            max-width: 85px;
+        }
+        .sobre-objetivos img{
+            max-width: 85px;
+        }
+        .sobre-objetivos p{
+            width: 280px;
+        }
+        .sobre{
+            flex-direction: column;
+            gap: 80px 50px;
+            flex-wrap: wrap;
+        }
     .conteudo-conhecimentos .flex{
         display: flex;
         gap: 20px;
@@ -822,16 +1080,15 @@ section.topo-do-site .flex{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 50px;
+        padding-bottom: 0;
     }
     .conteudo-conhecimentos .flex  .img-conhecimento{
         width: 100%;
-        margin-top: 8%;
         max-width: 350px;
         min-width: 200px;
         max-height: 400px;
         min-height: 300px;
-        filter: drop-shadow(0 0 8px rgb(255, 19, 19));
+        filter: drop-shadow(0 0 80px rgb(255, 19, 19));
 
     }
     .conteudo-contato .flex{
