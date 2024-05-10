@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
       if (index < nome.length) {
         elementoTexto.textContent += nome.charAt(index);
         index++;
-        setTimeout(digitar, 150); // Intervalo entre as letras (150ms)
+        setTimeout(digitar, 150); 
       }
     }
   
-    elementoTexto.style.opacity = '1'; // Torna o texto visível
-    digitar(); // Inicia a animação de digitação
+    elementoTexto.style.opacity = '1'; 
+    digitar(); 
   });
   
   document.addEventListener('DOMContentLoaded', function() {
@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     links.forEach(link => {
       link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevenir o comportamento padrão do link
+        e.preventDefault(); 
         
-        const targetClass = this.getAttribute('href').substring(1); // Obter a classe da seção alvo
-        const targetElements = document.getElementsByClassName(targetClass); // Encontrar todos os elementos com a classe alvo
+        const targetClass = this.getAttribute('href').substring(1); 
+        const targetElements = document.getElementsByClassName(targetClass); 
         
         if (targetElements.length > 0) {
-          const targetElement = targetElements[0]; // Selecionar o primeiro elemento com a classe alvo
+          const targetElement = targetElements[0]; 
           const topOffset = targetElement.getBoundingClientRect().top + window.pageYOffset;
-          window.scrollTo({ top: topOffset, behavior: 'smooth' }); // Rolagem suave
+          window.scrollTo({ top: topOffset, behavior: 'smooth' });
         }
       });
     });
