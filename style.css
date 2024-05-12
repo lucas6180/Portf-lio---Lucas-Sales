@@ -698,6 +698,10 @@ a {
       visibility: visible;
       transition: 0.2s;
     }
+    /* DESATIVANDO MENU-DESKTOP */
+    .menu-desktop{
+      display: none;
+    }
   /* PRIMEIRA SEÇÃO */
   .topo-do-site {
     display: flex;
