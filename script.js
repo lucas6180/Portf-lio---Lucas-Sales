@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const elementoTexto = document.getElementById('nome-texto');
     
     let index = 0;
-  
+    
     function digitar() {
       if (index < nome.length) {
         elementoTexto.textContent += nome.charAt(index);
@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
     }
   
+  
     elementoTexto.style.opacity = '1'; 
     digitar(); 
   });
-  
   document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a[href^="#"]');
     
@@ -46,4 +46,30 @@ botaoMobile.addEventListener('click', animarMenu)
   botaoMobile.classList.toggle('ativar')
 }
 
-  
+
+// Efeito de Scroll
+
+window.effectscroll = ScrollReveal({reset:true});
+
+// EFeito scroll topo site
+effectscroll.reveal('.efeito-scroll',{
+  duration: 2000,
+  distance: '90px',
+})
+// Imagens com efeito scroll
+effectscroll.reveal('.img-efeito-scroll',{
+  duration: 2000,
+  distance: '90px',
+  delay: 500
+});
+effectscroll.reveal('.botao-efeito-scroll',{
+  duration: 2000,
+  distance: '30px',
+  delay: 1000
+});
+
+
+effectscroll.reveal('.titulo',{
+  duration: 2000,
+  distance: '50px',
+})

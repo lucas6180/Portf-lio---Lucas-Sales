@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    <!-- Biblioteca de scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400.. 700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +28,7 @@
 
         <div class="barra-menu">
             <div class="logo-site">
-                <a href="#">
+                <a href="index.html">
                     <img src="assets/icon-vermelho.png" alt="logo">
                 </a>
             </div>
@@ -64,7 +66,7 @@
     <main>
         <section class="topo-do-site">
                 <div class="flex">
-                    <div class="conteudo-txt-topo">
+                    <div class="conteudo-txt-topo efeito-scroll">
                         <h1 id="nome">
                             <span id="nome-texto"></span><span id="cursor">|</span>
                         </h1>
@@ -74,22 +76,22 @@
                             "Cada linha de código conta uma história; <span>Deixe-me contar a sua</span>."
                         </p>
 
-                        <div class="botao-contato">
+                        <div class="botao-contato botao-efeito-scroll">
                             <a href="#conteudo-contato">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
                     </div>
-                    <div class="img-topo-site">
+                    <div class="img-topo-site img-efeito-scroll">
                         <img src="assets/IMG_5047.PNG" alt="">
                     </div>
                 </div>
         </section>
         <section class="conteudo-sobre">
-            <h1> <span class="piscar-azul">&lt;</span>Sobre Mim<span class="piscar-azul">&gt;</span> </h1>
+            <h1 class="titulo"> <span class="piscar-azul">&lt;</span>Sobre Mim<span class="piscar-azul">&gt;</span> </h1>
             <div class="flex">
 
-                <img src="assets/eu.JPEG" alt="">
+                <img class="img-efeito-scroll" src="assets/eu.JPEG" alt="">
 
                 <div class="sobre">
 
@@ -133,7 +135,7 @@
         </section>
 
         <section class="conteudo-conhecimentos">
-            <h1><span class="piscar-azul">&lt;</span>Conhecimentos<span class="piscar-azul">&gt;</span>
+            <h1 class="titulo"><span class="piscar-azul">&lt;</span>Conhecimentos<span class="piscar-azul">&gt;</span>
             </h1>
             <div class="flex">
 
@@ -168,7 +170,7 @@
 
         </section>
         <section class="conteudo-projetos">
-            <h1><span class="piscar-azul">&lt;</span>Projetos<span class="piscar-azul">&gt;</span>
+            <h1 class="titulo"><span class="piscar-azul">&lt;</span>Projetos<span class="piscar-azul">&gt;</span>
             </h1>
             <div class="flex">
                 <div class="img-port menu-mario prontos">
@@ -239,7 +241,7 @@
             </div>
         </section>
         <section class="conteudo-contato">
-            <h1><span class="piscar-azul">&lt;</span>Entre em Contato<span class="piscar-azul">&gt;</span>
+            <h1 class="titulo"><span class="piscar-azul">&lt;</span>Entre em Contato<span class="piscar-azul">&gt;</span>
             </h1>
             <div class="flex">
 
@@ -297,6 +299,6 @@
             <div class="preenchimento"></div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

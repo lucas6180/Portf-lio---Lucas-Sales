@@ -21,6 +21,11 @@ body {
   padding: 0 2%;
   background-color: rgb(12, 12, 12);
 }
+
+/* Efeito com scroll */
+.efeito-scroll, .img-efeito-scroll, .botao-efeito-scroll, .titulo{
+  visibility: hidden;
+}
 /* BARRA MENU E CABELHAÇO */
 header > .interface {
   display: flex;
