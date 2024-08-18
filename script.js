@@ -82,7 +82,7 @@ effectscroll.reveal('.card-projetos',{
   duration: 2000,
   distance: '50px',
 });
-effectscroll.reveal('.formas-contato',{
+effectscroll.reveal('.conteudo-contato .flex',{
   duration: 2000,
   distance: '50px',
 });
