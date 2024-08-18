@@ -23,9 +23,7 @@ body {
 }
 
 /* Efeito com scroll */
-.efeito-scroll, .img-efeito-scroll, .botao-efeito-scroll, .titulo{
-  visibility: hidden;
-}
+
 /* BARRA MENU E CABELHAÇO */
 header > .interface {
   display: flex;
@@ -36,6 +34,7 @@ header .menu-desktop a {
   color: rgb(110, 110, 110);
   text-decoration: none;
   position: relative; 
+  font-weight: 500;
 }
 header .menu-desktop a:hover{
   transform: scale(1.05);
@@ -99,6 +98,16 @@ header .menu-desktop li {
   33.33% {
     transform: translateY(-10px);
   }
+}
+.logo-site{
+  display: flex;
+  align-items: center;
+}
+.logo-site h1{
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 .logo-site img {
   animation: flutuar 1.5s ease-in-out infinite alternate;
@@ -601,12 +610,7 @@ a {
   min-width: 220px;
   max-width: 500px;
 }
-.conteudo-rodape h1 {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  filter: drop-shadow(0 0 1px rgb(255, 19, 19));
-}
+
 .conteudo-rodape .flex .dev-rodape h2 {
   font-size: 40px;
   text-align: center;

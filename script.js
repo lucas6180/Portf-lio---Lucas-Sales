@@ -69,7 +69,24 @@ effectscroll.reveal('.botao-efeito-scroll',{
 });
 
 
-effectscroll.reveal('.titulo',{
+effectscroll.reveal('.card-sobre',{
   duration: 2000,
   distance: '50px',
-})
+});
+effectscroll.reveal('.conhecimentos',{
+  duration: 2000,
+  distance: '50px',
+});
+
+effectscroll.reveal('.card-projetos',{
+  duration: 2000,
+  distance: '50px',
+});
+effectscroll.reveal('.formas-contato',{
+  duration: 2000,
+  distance: '50px',
+});
+effectscroll.reveal('footer',{
+  duration: 2000,
+  distance: '50px',
+});
