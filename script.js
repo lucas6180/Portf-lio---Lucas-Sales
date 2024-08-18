@@ -73,7 +73,7 @@ effectscroll.reveal('.card-sobre',{
   duration: 2000,
   distance: '50px',
 });
-effectscroll.reveal('.conhecimentos',{
+effectscroll.reveal('.card-conhecimentos',{
   duration: 2000,
   distance: '50px',
 });
